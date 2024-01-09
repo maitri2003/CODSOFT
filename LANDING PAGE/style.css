@@ -1,0 +1,358 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+/*=================================Header Start======================*/
+
+header{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    margin-right: 30px;
+    color: rgb(234, 144, 18);
+    font-family: 'Handlee', cursive;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+nav{
+    margin-right: 30px;
+   
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul li{
+    padding-right: 40px;
+
+}
+
+nav ul li a{
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icons i{
+    padding-right: 40px;   
+}
+
+.home{
+    background-image: url(mart3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.home .row{
+    display: flex;
+    flex-direction: row;
+}
+
+.home-col-1{
+    padding: 60px;
+}
+
+.home-col-1 h1{
+    font-size: 75px;
+    letter-spacing: 4px;
+    line-height: 70px;
+    color: aliceblue;
+    padding-bottom: 110px;
+    padding-top: 80px;
+    font-family: 'Handlee', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Viga', sans-serif;
+}
+
+.home-col-1 .two{
+    font-size: 55px;
+}
+
+.home-col-1 .one{
+    color: rgb(255, 163, 5);
+}
+
+/*=======================================Header End============================*/
+
+/*===================================Service start============================*/
+.service .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.service h1{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 40px;
+    letter-spacing: 7px;
+    font-family: 'Handlee', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.card{
+    padding: 20px;
+    border: 1px solid #000000;
+    margin: 20px;
+    align-items: center;
+}
+
+.img-card{
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.img2-card img{
+    
+    height: 200px;
+    width: 300px;
+    padding-left: 30px;   
+    
+}
+
+.img1-card img{
+    
+    height: 200px;
+    width: 300px;
+    padding-left: 70px; 
+}
+
+.img3-card img{  
+    height: 200px;
+    width: 300px;
+    padding-left: 80px;
+}
+
+
+.info-card h2{
+    text-align: center;
+    color: rgb(255, 163, 5);
+    font-size: 30px;
+
+}
+
+.info-card p{
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Cousine', monospace;
+    font-family: 'Cousine', monospace;
+    font-family: 'Handlee', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Overlock SC', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+/*===============================Service End==========================*/
+
+/*=======================================Dishes Start======================*/
+
+.dish .row{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    grid-column-gap: 70px;
+    grid-row-gap: 40px;
+    padding: 30px;
+}
+
+.dish h1{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 40px;
+    letter-spacing: 7px;
+    font-family: 'Handlee', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+
+.img-menu{
+    width: 300px;
+    height: 200px;
+}
+
+.img-menu img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.name-menu h3{
+    text-align: center;
+}
+/*=================================Dishes End========================*/
+
+/*============================Review Start=============================*/
+.review{
+    background-color: rgb(249, 216, 186);
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.review h1{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 40px;
+    letter-spacing: 7px;
+    font-family: 'Handlee', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.block{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    width: 90%;
+
+
+}
+
+.block:nth-child(even){
+    transform: translateX(3rem);
+}
+
+.img-block{
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+
+
+.img-block img{
+    
+    height: 200px;
+    width: 300px;
+}
+
+.info-block{
+    padding-left: 60px;
+    padding-right: 50px;
+    font-family: 'Cousine', monospace;
+    font-family: 'Handlee', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Overlock SC', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.info-block h2{
+    font-size: 30px;
+}
+
+.info-block p{
+    font-size: 18px;
+}
+/*==================================Review End==========================*/
+
+/*====================Contact start========================*/
+.contacts{
+    background-color: rgb(255, 145, 0);
+    padding-top: 0;
+    margin-top: 0;
+}
+.contacts h1{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 40px;
+    letter-spacing: 7px;
+    font-family: 'Handlee', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Signika Negative', sans-serif;
+
+}
+.contacts .container {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+.contact {
+ padding: 20px;
+ font-size: 20px;
+ text-align: center;
+
+}
+
+/*========================Contact End=====================*/
+
+/*========================Footer Start======================*/
+
+footer{
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    background-color: orange;
+    font-weight: bolder;
+}
+/*========================Footer End=======================*/
+
+
