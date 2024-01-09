@@ -1,0 +1,615 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    
+}
+
+/*====================header start======================*/
+header{
+    padding: 10px;
+    
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+header h1{
+    color: #FFFFFF;
+    margin-left: 50px;
+    margin-right: 15%;
+    font-family: 'PT Serif', serif;
+}
+
+nav{
+    width: 40%;
+    margin-left: 20%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+nav ul li a{
+    transition: 0.3s;
+    text-decoration: none;
+    padding: 5px 2px;
+    color: #FFFFFF;
+    font-family: 'PT Serif', serif;
+    font-size: 17px;
+    
+  }
+
+nav a:hover{
+    color: grey;
+  }
+
+/*=================================header end=================================*/
+
+/*=========================home start==============*/
+
+section {
+    margin-bottom: 40px;
+}
+
+.home .container{
+    padding-right: 50px;
+    padding-left: 100px;
+    padding-bottom: 18px;
+    background-color: black;
+}
+
+
+.home .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home-col-1{
+    flex-basis: 50%;
+    margin-top: 20px;
+    margin-left: 100px;
+    color: #f4f4f4;
+}
+
+.home-col-1 h1 .small{
+    font-size: 40px;
+    color: #555;
+    font-family: "Roboto", sans-serif;
+    color: rgb(91, 91, 91);
+}
+
+.home-col-1 h1{
+    font-size: 80px;
+    font-family: "Frank Ruhl Libre", serif;
+    padding-bottom: 30px;
+    border-bottom: 3px solid rgb(91, 91, 91);
+    
+}
+
+.tab{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tab .btn{
+    color: #000000;
+    font-family: "poppins-bold", sans-serif;
+    letter-spacing: .3rem;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 15px;
+    background-color:rgb(255, 187, 0) ;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 5px solid rgb(255, 187, 0);
+    
+}
+
+.tab button:hover{
+    background-color:#FFFFFF;
+    color:black;
+}
+
+
+
+
+/*===============home end==========*/
+
+/*=============about start============*/
+
+.about{
+    margin-top: 150px;
+    margin-bottom: 0%;
+    width: 100%; 
+    background-image: url('/assets/main.png') ;
+    background-color: #000000;
+    background-size: cover;
+    background-position: right ;
+    background-repeat: no-repeat;
+    background-size: 500px;
+}
+
+
+.about .container{
+    color:#FFFFFF;
+    padding-bottom: 30px;
+}
+
+.about h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: .2rem;
+    padding-top: 40px;
+    
+}
+
+.about .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.5);
+}
+.about pre{
+    width: 40%;
+    font-size: 17px;
+    margin-left: 50px;
+    margin-right: 100px;
+    text-align: left;
+    line-height: 2.0;
+    font-family: 'PT Serif', serif;
+}
+
+/*=============about end===========*/
+
+/*=============skills start============*/
+.skills{
+    width:74%;
+    height: auto;
+    padding: 80px 13%;
+    background-color: #FFFFFF;
+    margin-bottom: 0;
+    
+}
+
+.skills h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: .2rem;
+    
+}
+
+.skills .row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 50px;
+    grid-row-gap:15px;
+}
+    
+
+.row .skills-col .skills-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.row .skills-col .logo{
+    width: 30px;
+    height: 30px;
+}
+
+.row .skills-col .logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.row .skills-col .skills-bar{
+    width: 100%;
+    height: 10px;
+    position: relative;
+    background-color: rgb(91, 91, 91);
+    border-radius: 25px;
+    margin-top: 5px;
+}
+
+.row .skills-col .skills-bar span{
+    width: 50%;
+    height: 10px;
+    background-color:#000000 ;
+    border-radius: 25px;
+    position:absolute;
+    
+}
+
+.row .skills-col .skills-bar .html{
+    width: 100%;
+    animation: html 3s;
+}
+
+@keyframes html{
+    0%{
+        width: 0;
+    }100%{
+        width: 100%;
+    }
+}
+
+.skills-bar .css{
+    width: 80%;
+    animation: css 3s;
+}
+
+@keyframes css{
+    0%{
+        width: 0;
+    }100%{
+        width: 80%;
+    }
+}
+
+.skills-bar .javascript{
+    width: 60%;
+    animation: javascript 3s;
+}
+
+@keyframes javascript{
+    0%{
+        width: 0;
+    }100%{
+        width: 60%;
+    }
+}
+.skills-bar .python{
+    width: 80%;
+    animation: python 3s;
+}
+
+@keyframes python{
+    0%{
+        width: 0;
+    }100%{
+        width: 80%;
+    }
+}
+
+.skills-bar .cpp{
+    width: 40%;
+    animation: cpp 3s;
+}
+
+@keyframes cpp{
+    0%{
+        width: 0;
+    }100%{
+        width: 40%;
+    }
+}
+
+.skills-bar .mysql{
+    width: 75%;
+    animation: mysql 3s;
+}
+
+@keyframes mysql{
+    0%{
+        width: 0;
+    }100%{
+        width: 75%;
+    }
+}
+
+.skills-bar .java{
+    width: 50%;
+    animation: java 3s;
+}
+
+@keyframes java{
+    0%{
+        width: 0;
+    }100%{
+        width: 50%;
+    }
+}
+
+.skills-bar .uiux{
+    width: 70%;
+    animation: uiux 3s;
+}
+
+@keyframes uiux{
+    0%{
+        width: 0;
+    }100%{
+        width: 70%;
+    }
+}
+
+
+
+
+/*====skills end===*/
+/*=====project start=====*/
+.projects{
+    background-color: #ebebeb;
+    margin-top: 0;
+}
+
+.projects h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: .2rem;
+    margin-top: 0;
+    padding-top: 30px;
+    
+}
+
+
+.projects .container{
+    max-width: 1240px;
+    margin-top: 20px;
+    counter-reset: ctr;
+    position: relative;
+    padding-left: 80px;
+    padding-bottom: 50px;
+}
+
+.projects .row{
+  margin-bottom: 2.4rem;
+  padding: 0 60px;
+  min-height: 44.8rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-column-gap: 150px;
+  grid-row-gap: 40px;
+}
+
+
+.projects .row .projects-block{
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 3.6rem;
+  padding-bottom: 20px;
+  border-bottom:3px solid #000000;
+}
+
+.projects .row .projects-block::before{
+    display: block;
+  content: counter(ctr, decimal-leading-zero) ".";
+  counter-increment: ctr;
+  margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 6rem;
+  line-height: 1;
+  color: rgb(255, 187, 0);
+}
+
+.projects .row .projects-box{
+    height: 300px;
+    width: 500px;
+}
+
+.projects .row .projects-box img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.projects .row .projects-block h2{
+    color: #000000;
+    font-family: 'Lora', serif;
+}
+
+.projects .row .projects-block p{
+    color: #000000;
+    font-family: 'PT Serif', serif;
+}
+
+/*=====project end=====*/
+
+/*=====achievement start=====*/
+.achievements {
+	padding-top: 0px;
+	padding-bottom: 20px;
+}
+
+.achievements h1 {
+	text-align: center;
+	color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    letter-spacing: .2rem;
+    padding-top: 10px;
+}
+
+
+
+.achievements .container{
+    max-width: 100%;
+    margin-top: 7%;
+    
+}
+
+
+.achievements .timeline{
+    position: relative;
+	margin-top: 30pxrem;
+	margin-bottom: 30px;
+}
+
+.achievements .timeline::before{
+    content: " ";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	left: 35%;
+	top: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+.achievements .timeline-block {
+	position: relative;
+	
+}
+
+
+.achievements .timeline-header {
+    float: left;
+    width: 35%;
+    text-align: left;
+    margin-left: 10%;
+    
+    
+}
+
+.achievements .timeline-header h3 {
+	padding-bottom: 10px;
+    color: #f4f4f4;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    color: rgb(255, 187, 0);
+}
+
+.achievements .timeline-header p {
+	font-family: 'PT Serif', serif;
+	font-size: 15px;
+	color: #f4f4f4;
+    margin-top: 0;
+}
+
+.achievements .timeline-content {
+	margin-left: 35%;
+	padding-left: 60px;
+    max-width: 40%;
+    color: #FFFFFF;
+    border-left: 3px solid white;
+    
+}
+
+.achievements .timeline-content::before{
+    content: "";
+    background: #f4f4f4;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    left: 31.7rem;
+    top: 2.5rem;
+}
+
+.achievements .timeline-content h4 {
+	text-align: left;
+    margin-top: 0;
+    padding-top: 21px;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    color: rgb(255, 187, 0);
+	
+}
+
+.achievements .timeline-content p{
+    margin-bottom: 0;
+    padding-bottom: 50px;
+    text-align: left;
+    font-family: 'PT Serif', serif;
+    font-size: 15px;
+    padding-left: 90px;
+    letter-spacing: 1px;
+}
+/*===================achievement end==============*/
+
+/*===============contact start========*/
+.contact h1{
+    color: #f4f4f4;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    letter-spacing: .2rem;
+}
+
+.contact .container{
+    width: 60%;
+    margin-left: 25%;
+}
+
+.contact .row{
+    max-width:  60%;
+    padding-top: 80px;
+}
+
+.contact .contact-box{
+    background-color: #000000;
+    
+}
+
+.contact-box input{
+    width: 150%;
+    background-color: #000000;
+    border-color:3px solid #000000;
+    margin-bottom: 50px;
+    font-size: 20px;
+    border: 5px ;
+    border-bottom: 1px solid rgb(91,91,91);
+    padding-bottom: 20px;
+}
+
+.contact-box textarea{
+    width: 150%;
+    background-color: #000000;
+    border-color:3px solid #000000;
+    margin-bottom: 50px;
+    font-size: 20px;
+    border: 5px ;
+    border-bottom: 1px solid rgb(91,91,91);
+
+}
+
+.row-contact{
+    color: #ffffff;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-contact .icon-pin i{
+    background: #FFFFFF;
+    color: #FFFFFF;
+}
+
+
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
